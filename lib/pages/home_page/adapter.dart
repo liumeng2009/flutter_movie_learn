@@ -25,7 +25,6 @@ class HomeMovieListConnector extends ConnOp<HomePageState, List<ItemBean>> {
     if(!state.isDataReady) {
       return items;
     }
-
     items.add(ItemBean('header', '精选专题'));
     items.add(ItemBean('topic', state.home.topics));
     for (var section in state.home.sections ) {
